@@ -1,0 +1,11 @@
+.env
+*.env
+.venv/
+__pycache__/
+*.pyc
+
+# Opciones configuradas:
+# ----------------------
+# .env y *.env -> archivos con contraseñas; .env.example sí se sube
+# .venv/ -> entorno virtual de Python de la TAREA 4
+# __pycache__/ y *.pyc -> archivos que genera Python al ejecutar
