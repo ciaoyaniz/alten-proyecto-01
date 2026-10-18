@@ -1,0 +1,18 @@
+services:
+  app:
+    build: ./app
+    image: lab-postgres-app:1.0
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3000:3000"
+
+# Opciones configuradas:
+# ----------------------
+# app -> único servicio; PostgreSQL está en otra VM
+# build: ./app -> construye con el Dockerfile de app
+# image -> mismo nombre que con docker build
+# restart: unless-stopped -> vuelve a arrancar salvo que lo pare yo
+# env_file: .env -> variables del .env; la contraseña no está en este archivo
+# ports: "3000:3000" -> puerto de la VM : puerto del contenedor
+# sin name, networks ni container_name -> proyecto y red se llaman como la carpeta

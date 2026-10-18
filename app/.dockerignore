@@ -1,0 +1,10 @@
+.env
+*.env
+.venv/
+__pycache__/
+*.pyc
+
+# Opciones configuradas:
+# ----------------------
+# .env y *.env -> la contraseña nunca entra en la imagen
+# .venv/, __pycache__/ y *.pyc -> las librerías se instalan con pip; lo de Python no hace falta
